@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Escape</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scanlines"></div>
+
+    <div class="game-shell">
+      <header class="topbar">
+        <div class="brand">CYBER ESCAPE</div>
+        <div class="hud">
+          <span id="timer">05:00</span>
+          <span>Score: <strong id="score">0</strong></span>
+        </div>
+      </header>
+
+      <section class="story-panel">
+        <p id="story">
+          A rogue AI has locked the facility. Crack each terminal, survive the vault,
+          and escape before the network goes dark.
+        </p>
+      </section>
+
+      <main id="gameArea" class="room">
+        <div class="room-header">
+          <p class="label">ACCESS NODE</p>
+          <h2 id="levelTitle">Level 1: Neon Server</h2>
+        </div>
+
+        <p id="question">The smallest unit of data is...</p>
+
+        <input type="text" id="answer" placeholder="Type your answer" />
+
+        <div class="actions">
+          <button id="submitBtn">UNLOCK</button>
+          <button id="hintBtn" class="ghost">HINT</button>
+        </div>
+
+        <p id="message" class="message"></p>
+        <p id="hint" class="hint"></p>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
